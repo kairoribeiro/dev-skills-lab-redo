@@ -11,8 +11,10 @@
     <a href="/skills/new">Add a Skills</a>
     <ul>
         <% skills.forEach(skill=> { %>
-            <li>
-                <%= skill.skill %>
+            <li><form action="">
+                <button type="submit">X</button>
+                <a href="skills/<%= skill.id %>"><%= skill.skill %></a>
+            </form>
             </li>
             <% }) %>
     </ul>
